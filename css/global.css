@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;700&family=Raleway:wght@400;700&display=swap');
 
+
 html {
     scroll-behavior: smooth;
 }
@@ -9,6 +10,16 @@ html, body, h1, h2, h3, h4, h5, h6, ul, p {
     margin: 0;
     font-family: 'Open Sans', sans-serif;
 }
+
+body>* {
+    padding: 6vh 10vw;
+    background-color: #EAF2FD;
+}
+
+body>*:nth-child(odd) {
+    background-color: #fff;
+}
+
 
 h1, h2, h3, h4, h5, h6 {
     color: #464646;
@@ -85,6 +96,13 @@ input, textarea {
 
 input:focus, textarea:focus {
     border-bottom-color: #2A7AE4;
+}
+
+input[type=search] {
+    border: none;
+    border-radius: 25px;
+    background: #F5F5F5;
+    padding: 0px 3%;
 }
 
 textarea {

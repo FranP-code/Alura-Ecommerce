@@ -1,0 +1,23 @@
+.logo {
+  height: 5vh;
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 6px;
+       column-gap: 6px;
+}
+.logo h1 {
+  font-size: 17pt;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+}
+header input {
+  width: 50%;
+}
+header a {
+  width: 15%;
+}/*# sourceMappingURL=index.css.map */
