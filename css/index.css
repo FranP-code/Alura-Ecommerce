@@ -45,4 +45,38 @@ header a {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
+}
+
+.products .items-gallery-container .title {
+  display: flex;
+  justify-content: space-between;
+  padding: 2vh 0px;
+}
+.products .items-gallery-container .title h4 {
+  font-size: 32px;
+  line-height: 38px;
+}
+.products .items-gallery-container .title a h5 {
+  display: flex;
+  align-items: center;
+}
+.products .items-gallery-container .title a h5 span {
+  margin-right: 11px;
+}
+.products .items-gallery-container .title a h5 img {
+  height: 14px;
+}
+.products .items-gallery-container .items-gallery .item {
+  display: flex;
+  flex-direction: column;
+  row-gap: 4px;
+}
+.products .items-gallery-container .items-gallery .item img {
+  height: 20vw;
+  max-width: 200px;
+  width: 20vw;
+  max-height: 200px;
+}
+.products .items-gallery-container .items-gallery .item .price {
+  font-weight: bold;
 }/*# sourceMappingURL=index.css.map */

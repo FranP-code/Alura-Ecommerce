@@ -48,3 +48,46 @@ header {
         width: fit-content;    
     }
 }
+.products {
+    .items-gallery-container {
+        .title {
+            display: flex;
+            justify-content: space-between;
+            padding: 2vh 0px;
+            h4 {
+                font-size: 32px;
+                line-height: 38px;
+            }
+            a {
+                h5 {
+                    display: flex;
+                    align-items: center;
+                    
+                    span {
+                        margin-right: 11px;
+                    }
+
+                    img {
+                        height: 14px;
+                    }
+                }
+            }
+        }
+        .items-gallery {
+            .item {
+                display: flex;
+                flex-direction: column;
+                row-gap: 4px;
+                img {
+                    height: 20vw;
+                    max-width: 200px;
+                    width: 20vw;
+                    max-height: 200px;
+                }
+                .price {
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+}
