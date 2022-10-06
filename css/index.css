@@ -79,4 +79,32 @@ header a {
 }
 .products .items-gallery-container .items-gallery .item .price {
   font-weight: bold;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+}
+footer nav ul {
+  display: flex;
+  flex-direction: column;
+  row-gap: 17px;
+}
+footer nav ul a {
+  color: #464646 !important;
+  color: red;
+  font-weight: normal;
+}
+footer form {
+  display: flex;
+  flex-direction: column;
+  row-gap: 6px;
+}
+footer form textarea {
+  height: auto;
+  flex-grow: 1;
+}
+
+.credits p {
+  text-align: center;
 }/*# sourceMappingURL=index.css.map */

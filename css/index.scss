@@ -91,3 +91,36 @@ header {
         }
     }
 }
+footer {
+    display: flex;
+    justify-content: space-between;
+
+    nav {
+        ul {
+            display: flex;
+            flex-direction: column;
+            row-gap: 17px;
+            a {
+                color: #464646 !important;
+                color: red;
+                font-weight: normal;
+            }
+        }
+    }
+    form {
+        display: flex;
+        flex-direction: column;
+        row-gap: 6px;
+
+        textarea {
+            height: auto;
+            flex-grow: 1;
+        }
+    }
+}
+
+.credits {
+    p {
+        text-align: center;
+    }
+}
