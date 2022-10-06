@@ -20,4 +20,29 @@ header input {
 }
 header a {
   width: 15%;
+}
+
+.promotion {
+  background: url(../img/promotion.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  row-gap: 12px;
+}
+.promotion h2 {
+  font-size: 40px;
+  line-height: 61px;
+  color: #FFFFFF;
+}
+.promotion h3 {
+  font-size: 17px;
+  line-height: 26px;
+  color: #FFFFFF;
+}
+.promotion button {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
 }/*# sourceMappingURL=index.css.map */
