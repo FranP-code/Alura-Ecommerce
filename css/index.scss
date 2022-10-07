@@ -49,6 +49,9 @@ header {
     }
 }
 .products {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
     .items-gallery-container {
         .title {
             display: flex;
@@ -82,9 +85,7 @@ header {
                 flex-direction: column;
                 row-gap: 4px;
                 img {
-                    height: 20vw;
                     max-width: 150px;
-                    width: 20vw;
                     max-height: 150px;
                 }
                 .price {
@@ -125,5 +126,49 @@ footer {
 .credits {
     p {
         text-align: center;
+    }
+}
+
+@media (max-width: 1375px) {
+    .products {
+        .items-gallery-container {
+            .items-gallery {
+                .item:nth-child(5), .item:nth-child(6) {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 905px) {
+    .products {
+        .items-gallery-container {
+            .items-gallery {
+                // flex-wrap: wrap;
+                .item {
+                    flex-grow: 1;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 900px) {
+    .products {
+        .items-gallery {
+            flex-wrap: wrap;
+            row-gap: 15px;
+            .item {
+                img {
+                    height: 30vw;
+                    min-height: 130px;
+                    max-height: initial !important;
+                    width: 30vw;
+                    min-width: 130px;
+                    max-width: initial !important;
+                }
+            }
+        }
     }
 }

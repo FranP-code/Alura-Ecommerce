@@ -113,7 +113,7 @@ for (let i = 0; i < productsGalleryQuantity; i++) {
     
     for (let e = 0; e < productsQuantity; e++) {
         products.push({
-            name: `Producto ${e}`,
+            name: `Producto ${e + 1}`,
             imageURL: `https://picsum.photos/500?random=${e - i}`,
             price: Math.trunc(Math.random() * 100)
         })

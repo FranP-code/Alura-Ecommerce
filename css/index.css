@@ -47,6 +47,11 @@ header a {
   width: fit-content;
 }
 
+.products {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
 .products .items-gallery-container .title {
   display: flex;
   justify-content: space-between;
@@ -78,9 +83,7 @@ header a {
   row-gap: 4px;
 }
 .products .items-gallery-container .items-gallery .item img {
-  height: 20vw;
   max-width: 150px;
-  width: 20vw;
   max-height: 150px;
 }
 .products .items-gallery-container .items-gallery .item .price {
@@ -113,4 +116,29 @@ footer form textarea {
 
 .credits p {
   text-align: center;
+}
+
+@media (max-width: 1375px) {
+  .products .items-gallery-container .items-gallery .item:nth-child(5), .products .items-gallery-container .items-gallery .item:nth-child(6) {
+    display: none;
+  }
+}
+@media (max-width: 905px) {
+  .products .items-gallery-container .items-gallery .item {
+    flex-grow: 1;
+  }
+}
+@media (max-width: 900px) {
+  .products .items-gallery {
+    flex-wrap: wrap;
+    row-gap: 15px;
+  }
+  .products .items-gallery .item img {
+    height: 30vw;
+    min-height: 130px;
+    max-height: initial !important;
+    width: 30vw;
+    min-width: 130px;
+    max-width: initial !important;
+  }
 }/*# sourceMappingURL=index.css.map */
