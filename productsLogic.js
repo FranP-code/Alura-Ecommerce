@@ -22,9 +22,6 @@
         </div>
  */
 
-const productsQuantity = 6
-const productsGalleryQuantity = 3
-
 function appendProductGallery(productGallery) {
     (document.querySelector('.products')).appendChild(productGallery)
 }
@@ -42,13 +39,16 @@ class ProductGallery {
         const heading = document.createElement('h4')
             heading.innerText = this.title
         const link = document.createElement('a')
-            link.href = "https://google.com"
+            link.href = enviroment === 'products' ? "./add-product.html" : "./products.html"
         const seeAll = document.createElement('h5')
         const seeAllText = document.createElement('span')
             seeAllText.innerText = 'Ver todo'
         const seeAllImg = document.createElement('img')
             seeAllImg.src = './img/arrow.svg'
             seeAllImg.alt = 'arrow'
+        const addProductButton = document.createElement('button')
+            addProductButton.innerText = 'Agregar producto'
+            addProductButton.classList.add('primary')
         const gallery = document.createElement('div')
             gallery.classList.add('items-gallery')
 
@@ -62,7 +62,7 @@ class ProductGallery {
            seeAll.appendChild(element)
         }
 
-        link.appendChild(seeAll)
+        link.appendChild(enviroment === 'products' ?  addProductButton : seeAll)
         
         for (const element of [heading, link]) {
             title.appendChild(element)
@@ -121,7 +121,22 @@ for (let i = 0; i < productsGalleryQuantity; i++) {
     
     products = products.map(product => new Product(product).createHTMLElement())
     
+    let productGalleryTitle
+
+    switch (true) {
+        case enviroment === 'index':
+            productGalleryTitle = `Galería ${i + 1}`
+            break;
+    
+        case enviroment === 'products':
+            productGalleryTitle = "Todos los productos"
+            break;
+        default:
+            throw Error()
+            break;
+    }
+
     appendProductGallery(
-        new ProductGallery(`Galería ${i + 1}`, products).createHTMLElement()
+        new ProductGallery(productGalleryTitle, products).createHTMLElement()
     )
 }

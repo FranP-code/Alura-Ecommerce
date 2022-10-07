@@ -4,10 +4,12 @@ const headData = `
 
 const header = `
     <header>
-        <div class="logo">
-            <img src="./img/logo.svg" alt="logo">
-            <h1>Mr. Geek</h1>
-        </div>
+        <a href="./index.html">
+            <div class="logo">
+                <img src="./img/logo.svg" alt="logo">
+                <h1>Mr. Geek</h1>
+            </div>
+        </a>
         <input type="search" placeholder="¿Qué desea buscar?">
         <a href="./login.html">
             <button class="secondary">Login</button>
