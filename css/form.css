@@ -1,0 +1,14 @@
+.login {
+  padding: 20vh 30vw;
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+}
+.login h2 {
+  text-align: center;
+}
+.login form {
+  display: flex;
+  flex-direction: column;
+  row-gap: 4px;
+}/*# sourceMappingURL=form.css.map */

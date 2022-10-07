@@ -39,6 +39,8 @@ a, a>* {
 }
 
 button {
+    box-sizing: border-box;
+    width: 100%;
     padding: 16px;
     border: none;
     outline: none;  
@@ -70,6 +72,7 @@ button.secondary {
 }
 
 input, textarea {
+    box-sizing: border-box;
     background-color: #fff;
     width: 100%;
     height: 46px;

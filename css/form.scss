@@ -1,0 +1,16 @@
+.login {
+    padding: 20vh 30vw ;
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+
+    h2 {
+        text-align: center;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        row-gap: 4px;
+    }
+}
