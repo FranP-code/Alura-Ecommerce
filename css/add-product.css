@@ -1,0 +1,13 @@
+.add-product {
+  padding: 10vh 22vw;
+}
+.add-product h2 {
+  font-size: 32px;
+  line-height: 38px;
+  margin-bottom: 18px;
+}
+.add-product form {
+  display: flex;
+  flex-direction: column;
+  row-gap: 6px;
+}/*# sourceMappingURL=add-product.css.map */
