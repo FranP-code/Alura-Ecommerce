@@ -66,6 +66,12 @@ header a {
 .products .items-gallery-container .title a h5 img {
   height: 14px;
 }
+.products .items-gallery-container .items-gallery {
+  display: flex;
+  justify-content: space-between;
+  -moz-column-gap: 35px;
+       column-gap: 35px;
+}
 .products .items-gallery-container .items-gallery .item {
   display: flex;
   flex-direction: column;
@@ -73,9 +79,9 @@ header a {
 }
 .products .items-gallery-container .items-gallery .item img {
   height: 20vw;
-  max-width: 200px;
+  max-width: 150px;
   width: 20vw;
-  max-height: 200px;
+  max-height: 150px;
 }
 .products .items-gallery-container .items-gallery .item .price {
   font-weight: bold;
